@@ -1,11 +1,11 @@
 {
-  "name": "keycloakify-starter",
-  "homepage": "https://starter.keycloakify.dev",
-  "version": "6.0.2",
-  "description": "A starter/demo project for keycloakify",
+  "name": "akademia-keycloak-theme",
+  "homepage": "https://akademia.cc",
+  "version": "0.0.1",
+  "description": "Akademia Keycloak theme",
   "repository": {
     "type": "git",
-    "url": "git://github.com/codegouvfr/keycloakify-starter.git"
+    "url": "git://github.com/Akademiaapp/keycloak-theme.git"
   },
   "type": "module",
   "scripts": {
@@ -16,23 +16,16 @@
     "build-storybook": "storybook build"
   },
   "keycloakify": {
-    "themeName": "keycloakify-starter",
-    "extraThemeProperties": [
-      "foo=bar"
-    ]
+    "themeName": "akademia-keycloak-theme"
   },
-  "author": "u/garronej",
+  "author": "@arctix",
   "license": "MIT",
   "keywords": [],
   "dependencies": {
     "evt": "^2.5.7",
     "keycloakify": "^9.4.1",
-    "oidc-spa": "^4.2.1",
-    "powerhooks": "^1.0.8",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "tsafe": "^1.6.6",
-    "zod": "^3.22.4"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.14",
@@ -57,7 +50,6 @@
     "vite": "^5.0.8",
     "vite-plugin-commonjs": "^0.10.1"
   },
-  "_comment": "See https://github.com/storybookjs/storybook/issues/22431#issuecomment-1630086092",
   "resolutions": {
     "jackspeak": "2.1.1"
   }
