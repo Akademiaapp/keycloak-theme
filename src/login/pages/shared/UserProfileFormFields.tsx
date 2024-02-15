@@ -4,6 +4,7 @@ import { clsx } from "keycloakify/tools/clsx";
 import { useFormValidation } from "keycloakify/login/lib/useFormValidation";
 import type { Attribute } from "keycloakify/login/kcContext/KcContext";
 import type { I18n } from "../../i18n";
+import { Input } from "@/components/ui/input";
 
 export type UserProfileFormFieldsProps = {
     kcContext: Parameters<typeof useFormValidation>[0]["kcContext"];
@@ -113,7 +114,7 @@ export function UserProfileFormFields(props: UserProfileFormFieldsProps) {
                                     }
 
                                     return (
-                                        <input
+                                        <Input
                                             type={(() => {
                                                 switch (attribute.name) {
                                                     case "password-confirm":

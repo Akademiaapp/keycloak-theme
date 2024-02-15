@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react'
 // to a local version of the keycloakify package. This is not needed for normal usage.
 import commonjs from "vite-plugin-commonjs";
 import { keycloakify } from "keycloakify/vite-plugin";
+import path from "path"
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -12,6 +13,11 @@ export default defineConfig({
     commonjs(), 
     keycloakify()
   ],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
   /* 
    * Uncomment this if you want to use the default domain provided by GitHub Pages
    * replace "keycloakify-starter" with your repository name.  
