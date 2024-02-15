@@ -26,7 +26,7 @@ export default function Terms(props: PageProps<Extract<KcContext, { pageId: "ter
 
             const tos_url = (() => {
                 switch (currentLanguageTag) {
-                    case "fr": return `${import.meta.env.BASE_URL}terms/fr.md`;
+                    case "da": return `${import.meta.env.BASE_URL}terms/da.md`;
                     default: return `${import.meta.env.BASE_URL}terms/en.md`;
                 }
             })();
